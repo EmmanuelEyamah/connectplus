@@ -2,6 +2,7 @@
 
 import { ArrowUpOutlined, CheckCircleFilled } from "@ant-design/icons";
 import { Button, Typography } from "@material-tailwind/react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -37,7 +38,14 @@ const Hero = () => {
         </div>
 
         {/* Hero Animation goes here */}
-        <div className="w-full lg:w-[600px] relative"></div>
+        <div className="w-full lg:w-[600px] relative">
+          <Image
+            src="/homeflow.gif"
+            alt="Example GIF"
+            width={548}
+            height={400}
+          />
+        </div>
       </div>
     </section>
   );
