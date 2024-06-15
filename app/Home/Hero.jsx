@@ -40,9 +40,9 @@ const Hero = () => {
         {/* Hero Animation goes here */}
         <div className="w-full lg:w-[600px] relative">
           <Image
-            src="/homeflow.gif"
-            alt="Example GIF"
-            width={548}
+            src="/animate.gif"
+            alt="Home animation"
+            width={510}
             height={400}
           />
         </div>
