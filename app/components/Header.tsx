@@ -12,6 +12,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import LogoIcon from "./Logo";
 import useActiveLink from "../hooks/useActiveLink";
+import { commonProps } from "@/types/common";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -32,6 +33,7 @@ function NavList() {
             currentPath === item.href ? "text-[#0A52F6] font-bold" : ""
           }`}
           key={item.label}
+          {...commonProps}
         >
           <Link
             href={item.href}
@@ -60,13 +62,17 @@ const Header = () => {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-full px-12 py-3 rounded-none bg-[#FBFAFA] shadow-none">
+    <Navbar
+      className="mx-auto max-w-full px-12 py-3 rounded-none bg-[#FBFAFA] shadow-none"
+      {...commonProps}
+    >
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5"
+          {...commonProps}
         >
           <LogoIcon />
         </Typography>
@@ -76,8 +82,9 @@ const Header = () => {
             <Button
               size="sm"
               className="hidden lg:inline-block bg-[#0A52F6] text-white rounded-none"
+              {...commonProps}
             >
-              <span>Let's Chat</span>
+              <span>Lets Chat</span>
             </Button>
           </div>
         </div>
@@ -86,6 +93,7 @@ const Header = () => {
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
+          {...commonProps}
         >
           {openNav ? (
             <XMarkIcon className="h-6 w-6" strokeWidth={2} />
