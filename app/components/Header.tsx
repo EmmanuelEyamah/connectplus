@@ -10,9 +10,10 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import LogoIcon from "./Logo";
+import LogoIcon from "./svg/Logo";
 import useActiveLink from "../hooks/useActiveLink";
 import { commonProps } from "@/types/common";
+import AppButton from "./ui/Button";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -63,7 +64,7 @@ const Header = () => {
 
   return (
     <Navbar
-      className="mx-auto max-w-full px-12 py-3 rounded-none bg-[#FBFAFA] shadow-none"
+      className="container mx-auto w-full px-12 py-3 rounded-none bg-[#FBFAFA] shadow-none"
       {...commonProps}
     >
       <div className="flex items-center justify-between text-blue-gray-900">
@@ -79,13 +80,9 @@ const Header = () => {
         <div className="hidden gap-8 lg:flex">
           <NavList />
           <div className="flex items-center gap-x-1">
-            <Button
-              size="sm"
-              className="hidden lg:inline-block bg-[#0A52F6] text-white rounded-none"
-              {...commonProps}
-            >
+            <AppButton variant="primary">
               <span>Lets Chat</span>
-            </Button>
+            </AppButton>
           </div>
         </div>
         <IconButton

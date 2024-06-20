@@ -8,8 +8,14 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    theme: {
-      extend: {},
+    extend: {
+      container: {
+        screens: {
+          sm: "100%",
+          md: "100%",
+          lg: "1440px",
+        },
+      },
     },
   },
   plugins: [],
