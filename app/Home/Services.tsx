@@ -35,12 +35,12 @@ const Services = () => {
 
         <div className="mt-8">
           <div className="flex w-full gap-6">
-            {servicesData.map((service) => {
+            {servicesData.map((service, index) => {
               return (
                 <Card
                   className="group mt-6 w-[294px] h-[375px] hover:bg-[#0A52F6]"
                   {...commonProps}
-                  key={`service-card-${service.id}`}
+                  key={`service-card-${index}`}
                 >
                   <CardBody {...commonProps} className="flex flex-col gap-5">
                     <div dangerouslySetInnerHTML={{ __html: service.icon }} />
