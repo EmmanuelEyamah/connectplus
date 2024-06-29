@@ -48,7 +48,7 @@ const Hero = () => {
         {/* Hero Animation goes here */}
         <div className="w-full lg:w-[600px] relative flex items-center justify-center">
           <Image
-            src="/hero_animation.gif"
+            src="/Frame 1719.png"
             alt="Home animation"
             width={520}
             height={400}
