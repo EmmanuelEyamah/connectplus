@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { BaseTypography } from "../components/ui/Typography";
 import BlogCard from "../components/ui/BlogCard";
 import { blogs } from "@/dummyData/db";
+import Link from "next/link";
 
 const tags = ["All", "Web3", "SaaS", "Education", "HealthTech", "eCommerce"];
 
@@ -43,7 +44,9 @@ const Post = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 w-full mt-[45px]">
           {filteredBlogs.map((blog) => (
-            <BlogCard key={blog._id} blog={blog} />
+            <Link key={blog._id} href={`/blog/${blog._id}`}>
+              <BlogCard blog={blog} />
+            </Link>
           ))}
         </div>
       </div>
