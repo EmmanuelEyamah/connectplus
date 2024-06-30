@@ -5,29 +5,43 @@ import { Button, Input, Typography } from "@material-tailwind/react";
 import { BaseTypography } from "./ui/Typography";
 import { commonProps } from "@/types/common";
 import LogoIcon from "./svg/Logo";
+import Link from "next/link";
 
 const SITEMAP = [
   {
     title: "Company",
-    links: ["Our Vision", "Our Mission", "Careers"],
+    links: [
+      { label: "Our Vision", link: "ourVision" },
+      { label: "Our Mission", link: "ourMission" },
+      { label: "Careers", link: "careers" },
+    ],
   },
   {
     title: "Services",
     links: [
-      "Consultancy",
-      "Product Design",
-      "Product Research",
-      "Web Development",
-      "Mobile App Development",
+      { label: "Consultancy", link: "consultancy" },
+      { label: "Product Design", link: "productDesign" },
+      { label: "Product Research", link: "productResearch" },
+      { label: "Web Development", link: "webDevelopment" },
+      { label: "Mobile App Development", link: "mobileDevelopment" },
     ],
   },
   {
     title: "Product",
-    links: ["Our Process", "Research", "Planning", "Our Execution", "Blog"],
+    links: [
+      { label: "Our Process", link: "ourProcess" },
+      { label: "Research", link: "research" },
+      { label: "Planning", link: "planning" },
+      { label: "Our Execution", link: "ourExecution" },
+      { label: "Blog", link: "blog" },
+    ],
   },
   {
     title: "Legal",
-    links: ["Terms & Condition", "Privacy Policy"],
+    links: [
+      { label: "Terms & Condition", link: "terms" },
+      { label: "Privacy Policy", link: "privacy" },
+    ],
   },
 ];
 
@@ -52,14 +66,15 @@ const Footer = () => {
                   color="text-[#fff]"
                 />
                 <ul className="flex flex-col gap-4">
-                  {links.map((link, key) => (
-                    <BaseTypography
-                      key={key}
-                      label={link}
-                      fontSizeLarge="lg:text-[14px]"
-                      className=" font-medium leading-normal"
-                      color="text-[#FBFAFAB2]"
-                    />
+                  {links.map(({ link, label }, key) => (
+                    <Link key={key} href={link}>
+                      <BaseTypography
+                        label={label}
+                        fontSizeLarge="lg:text-[14px]"
+                        className=" font-medium leading-normal"
+                        color="text-[#FBFAFAB2]"
+                      />
+                    </Link>
                   ))}
                 </ul>
               </div>
@@ -78,7 +93,7 @@ const Footer = () => {
                 color="text-[#FBFAFAB2]"
               />
               <div className="w-full flex gap-2 mt-7">
-                <div className="w-[150px]">
+                <div className="w-[120px]">
                   <Input
                     crossOrigin={undefined}
                     className="w-[150px] rounded-3xl bg-white placeholder:text-[#636262] placeholder:opacity-100"
