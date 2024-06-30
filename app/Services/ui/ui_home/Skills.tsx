@@ -18,16 +18,11 @@ const Services = () => {
         <BaseTypography
           label="Our skills"
           fontSizeLarge="lg:text-[20px]"
-          className=" leading-6 uppercase font-bold "
+          className=" leading-6 uppercase skills font-bold font-montserrat"
         
         />
         <Typography
-          className=" text-5xl font-bold text-center leading-normal text-[#201E1E]" style={{
-            fontSize: "40px",
-            fontStyle: "normal",
-            fontWeight: "700",
-            lineHeight: "120%", /* 48px */
-            textTransform: "capitalize"}}
+          className=" text-5xl font-bold text-center font-work-sans leading-normal skillContent text-[#201E1E]" 
           {...commonProps}
         >
           Our Expertise Sets Us Apart
@@ -35,7 +30,7 @@ const Services = () => {
     
 
         <div className="mt-8 w-full">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
     {servicesData.map((service) => (
       <Card
         className="group mt-6 w-full h-[279px] rounded-none"
@@ -52,14 +47,13 @@ const Services = () => {
           <BaseTypography
             label={service.title}
             fontSizeLarge="lg:text-[23px]"
-            className="leading-7 font-bold"
-            color="text-[#000]"
+            className="leading-7 skillCardTitle"
           />
           <BaseTypography
             label={service.description}
             fontSizeLarge="lg:text-[20px]"
-            color="text-[#000]"
-            className="leading-7 font-normal"
+           
+            className="leading-7 skillCardDesc  font-normal"
           />
         </CardBody>
       </Card>
