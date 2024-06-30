@@ -5,13 +5,13 @@ export const blog: BlogPost = {
   title: "Restructuring UX flow the artisanal supply-chain of rural Nigeria.",
   short_desc: "Our product design service is the cornerstone of innovation.",
   description:
-    "Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam mauris diam venenatis amet placerat id. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam mauris diam venenatis amet placerat id. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam mauris diam venenatis amet placerat id",
+    "Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam mauris diam venenatis amet placerat id. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam mauris diam venenatis amet placerat id.Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam mauris diam venenatis amet placerat id.Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam mauris diam venenatis amet placerat id.Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam mauris diam venenatis amet placerat id. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam mauris diam venenatis amet placerat id",
   author: "Okolo Enemona",
   date: "24th June, 2024",
   tag: "Web3",
   new: false,
   trending: true,
-  image: "/assets/case-img.jpg",
+  image: ["/assets/case-img.jpg", "/assets/blog2.jpg"],
 };
 
 const tags = [

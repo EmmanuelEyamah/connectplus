@@ -43,7 +43,7 @@ const BlogCard: FC<BlogCardProps> = ({ blog }) => {
       </div>
       <div className="h-[314px] w-[360px]">
         <img
-          src={blog.image}
+          src={blog.image[0]}
           alt="blog thumbnail"
           className="w-full h-full object-cover rounded-2xl"
         />
