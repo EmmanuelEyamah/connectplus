@@ -5,7 +5,7 @@ import { commonProps } from "@/types/common";
 import { Typography } from "@material-tailwind/react";
 
 export interface TypographyProps {
-  label: string;
+  label?: string | string[];
   color?: string;
   fontSizeSmall?: string;
   fontSizeLarge?: string;
