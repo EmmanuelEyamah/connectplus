@@ -2,7 +2,9 @@
 
 import { Typography } from "@material-tailwind/react";
 import { commonProps } from "@/types/common";
-import Image from "next/image";
+import SelectedWorksFrame from "./SelectedWorksFrame";
+
+
 
 const SelectedWorks = () =>{
     return(
@@ -12,8 +14,8 @@ const SelectedWorks = () =>{
 {/* SELECTED DIV */} <div>
                 <Typography className=" gap-6 self-stretch text-[40px] font-sans leading-[48px] text-[#000] font-bold " {...commonProps}>  
                       Selected Works </ Typography>
-                        <div>
-                            <ul className=" flex gap-6 items-start font-sans text-[#4D4B4B] text-[20px]  active:decoration-blue-500 font-medium leading-8">
+                        
+                            <ul className=" flex items-start  gap-6  font-sans pt-6 text-[#4D4B4B] text-[20px]  active:decoration-blue-500 font-medium leading-8">
                               <li>All</li> 
                                 <li>Web3</li>
                                 <li>FinTech</li>
@@ -22,33 +24,26 @@ const SelectedWorks = () =>{
                                 <li>HealthTech</li>
                                 <li>E-Commerce</li>
                             </ul>
-                        </div>
+                           
 
+                {/* CARDS1*/} <div className=" pt-24  flex items-center gap-10 self-stretch  ">
 
-                    </div>
-{/* CARDS*/}        <div>
-{/* Card roll 1*/} <div className=" flex items-center gap-10 self-stretch ">
-  {/*Card 1, IMage */}    <div className=" flex flex-col items-start gap-6 flex-grow flex-shrink-0   ">
-                          <div>  <Image 
-                            src="/cards.png"
-                            {...commonProps}
-                            alt="Card 1"
-                            width={389.33333}
-                            height={212}
-                            className=" w-[389.33px] h-[212px] rounded-[20px] self-stretch"/> </div>
-                                <div>
-                                    
-                                    </div>  
-                            </div>      
+                 <SelectedWorksFrame />
+                 <SelectedWorksFrame />
+                 <SelectedWorksFrame />
+                 </div>
 
-              </div>
+{/* CARDS 2 */}
+             <div className=" pt-24  flex items-center gap-10 self-stretch  ">
 
-         
+                <SelectedWorksFrame />
+                 <SelectedWorksFrame />
+                 <SelectedWorksFrame />
+                 </div>
 
-               {/* Card roll 2*/}      <div></div>
-                    </div>
-       
-{/* Carousel 1 & 2 */}       
+                   </div>
+    
+           
         </div>
     )
 
