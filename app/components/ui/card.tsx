@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface CardProps {
+interface CardWhiteProps {
   title: string;
   content: string;
   icon?: React.ReactNode;
@@ -10,13 +10,13 @@ interface CardProps {
 import "../svg/linkIcon";
 import "../../Services/style.css";
 
-const Card: React.FC<CardProps> = ({ title, content, icon, link, linkIcon }) => {
+const CardWhite: React.FC<CardWhiteProps> = ({ title, content, icon, link, linkIcon }) => {
   return (
 
     <div className="Servicecard">
         <div className="ServiceInner">
       {icon && <div className="Serviceicon">{icon}</div>}
-        <h5 className="text-[#FBFAFA]">
+        <h5 className="">
           {title}
         </h5>
       </div>
@@ -37,4 +37,4 @@ const Card: React.FC<CardProps> = ({ title, content, icon, link, linkIcon }) => 
   );
 };
 
-export default Card;
+export default CardWhite;

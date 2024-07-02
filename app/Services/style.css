@@ -5,6 +5,7 @@
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
+    padding-top: 100px;
     font-weight: 600;
     line-height: 120%; /* 24px */
     font-variant: small-caps;
@@ -60,28 +61,17 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 gap: 16px;
-border-radius: 12px;
+border-radius: 12px;border-radius: 12px;
 border: 1px solid var(--Light-TextBlack-20, #D2D2D2);
 background: var(--Light-TextBlack-100, #201E1E);
 }
-.Servicecard1{
-    display: flex;
-    width: 266px;
-    height: 278px;
-padding: 5px 16px 32px 16px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 16px;
-border-radius: 12px;
-border: 1px solid var(--Light-TextBlack-20, #D2D2D2);
-background: var( #fff);
-}
+
 
 .Servicecard h5{
     align-self: stretch;
 font-family: "Work Sans";
 font-size: 20px;
+color: #fff;;
 font-style: normal;
 font-weight: 700;
 line-height: 120%; /* 24px */
@@ -163,5 +153,54 @@ line-height: normal;
 text-transform: capitalize;
 }
 .Servicecard1 a span{
+    text-decoration: underline;
+}
+
+.ServicecardBlue{
+    display: flex;
+    width: 266px;
+    height: 278px;
+padding: 5px 16px 32px 16px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 16px;
+border-radius: 12px;
+border: 1px solid var(--Light-TextBlack-20, #D2D2D2);
+background: var( #fff);
+}
+
+.ServicecardBlue h5{
+color: var(--Light-TextBlack-90, rgba(32, 30, 30, 0.90));
+    
+    align-self: stretch;
+font-family: "Work Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 24px */
+}
+
+
+.ServicecardBlue p{
+    color: var(--Light-TextWhite-80, #4D4B4B);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 18.2px */
+letter-spacing: 0.28px;
+}
+.ServicecardBlue a{
+    text-decoration: underline;
+    color: var(--Light-TextBlack-90, rgba(32, 30, 30, 0.90));
+font-family: "Work Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+.ServicecardBlue a span{
     text-decoration: underline;
 }
