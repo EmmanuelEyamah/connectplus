@@ -77,7 +77,7 @@ const Hero = () => {
                   cy="60"
                   r="59"
                   stroke="#0A52F6"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
                 <path d="M96 62L42 89.7128L42 34.2872L96 62Z" fill="#0A52F6" />
               </svg>
