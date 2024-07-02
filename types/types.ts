@@ -10,3 +10,26 @@ export interface BlogPost {
   trending: boolean;
   image: string | string[];
 }
+
+export interface IServicesSkills {
+  title: string;
+  description: string;
+}
+export interface IServicesBenefits {
+  title: string;
+  description: string;
+}
+
+export interface IServicesStep {
+  step: string;
+  description: string;
+}
+
+export interface IServices {
+  _id: string;
+  title: string;
+  description: string;
+  skills: IServicesSkills[];
+  steps: IServicesStep[];
+  benefits: IServicesBenefits[];
+}
