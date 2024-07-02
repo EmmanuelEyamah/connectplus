@@ -8,6 +8,9 @@ import ArrowIcon from '../components/svg/arrowIcon';
 import LinkIcon from '../components/svg/linkIcon';
 import CardWhite from '../components/ui/cardWhite';
 import CardHillIcon from '../components/svg/cardHillicon';
+import LightLinkIcon from '../components/svg/LightLinkIcon';
+import BlueCard from '../components/ui/cardBlue';
+import ServiceQuery from '../components/svg/serviceQuerry';
 
 
 
@@ -34,21 +37,36 @@ const Cards = () => {
     content="We provide continuous support and updates to keep pace with evolving market trends and user expectation."
     icon={<CardHillIcon/>}
     link="#"
-    linkIcon={<LinkIcon/>}
+    linkIcon={<LightLinkIcon/>}
   />
   
 
   
     
+  <BlueCard 
+    title="Software Architecture" 
+    content="We provide continuous support and updates to keep pace with evolving market trends and user expectation."
+    icon={<ServiceQuery/>}
+    link="#"
+    linkIcon={<LinkIcon/>}
+  />
+  <div className="top mt-[-285px] flex mx-auto gap-4">
   <CardWhite 
     title="Software Architecture" 
     content="We provide continuous support and updates to keep pace with evolving market trends and user expectation."
     icon={<CardHillIcon/>}
     link="#"
-    linkIcon={<LinkIcon/>}
+    linkIcon={<LightLinkIcon/>}
   />
+   <CardWhite 
+    title="Software Architecture" 
+    content="We provide continuous support and updates to keep pace with evolving market trends and user expectation."
+    icon={<CardHillIcon/>}
+    link="#"
+    linkIcon={<LightLinkIcon/>}
+  />
+  </div>
   
- 
 </div>
   </div>
    {/* first four ends */}
