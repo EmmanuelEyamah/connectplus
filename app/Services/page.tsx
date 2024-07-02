@@ -1,7 +1,12 @@
-import React from "react";
+import Cards from "./cards";
+import ServicesHero from "./Hero";
+import Hero from "./Hero";
 
-const Services = () => {
-  return <div>Services</div>;
-};
-
-export default Services;
+export default function Services(){
+  return(
+    <main className="">
+      <ServicesHero/>
+      <Cards/>
+    </main>
+  )
+}
