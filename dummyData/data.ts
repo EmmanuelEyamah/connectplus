@@ -1,20 +1,31 @@
 export const serviceTitles = [
-  "UI/UX Design",
+  "Web Development",
   "Welcome to a Web3 World",
   "Software Maintenance",
   "Database Management",
-  "Web Development",
+  "UI/UX Design",
   "Technical Consultancy",
   "Software Architecture",
   "Mobile App Developement",
 ];
 
+export const serviceShortDesc = [
+  "From robust backend systems to intuitive user interfaces...",
+  "We build revolutionary decentralized applications that enhance transparency...",
+  "We provide continuous support and updates to keep pace ..",
+  "We ensure your data is organised, secure, with optimise performance. We maintain the integrity of your information.",
+  "We blend creativity with functionality to craft user-centric designs that captivate, engage, and inspire.",
+  "We provide you with expert guidance and strategic insights to navigate",
+  "We provide continuous support and updates to keep pace with evolving market trends and user expectation.",
+  "We create intuitive, high-performance mobile and web applications tailored to your needs",
+];
+
 export const serviceDescription = [
-  " Our UI/UX design services are dedicated to creating intuitive, engaging, and aesthetically pleasing interfaces. We focus on understanding the needs and behaviors of your users to design products that offer exceptional experiences. From wireframes to high-fidelity prototypes, our team ensures every design decision enhances usability and delight.",
+  "These services are designed to create powerful, user-friendly websites that not only look great but also function seamlessly. We combine cutting-edge technology with creative design to build websites that engage users and drive business growth. Whether you need a simple informational site or a complex e-commerce platform, our team has the expertise to deliver a high-quality, custom solution.",
   "Our blockchain development services provide innovative solutions for decentralized applications and blockchain integration. We harness the power of blockchain technology to create secure, transparent, and efficient systems that transform traditional business processes.",
   "This services ensure your applications remains up-to-date, secure, and efficient. We provide continuous support and enhancements, addressing any issues promptly to minimise downtime and maintain optimal performance.",
   "Our database management services focus on optimising, maintaining, and securing your data infrastructure. We ensure your databases are efficient, scalable, and secure, providing a reliable backbone for your applications and business operations.",
-  "These services are designed to create powerful, user-friendly websites that not only look great but also function seamlessly. We combine cutting-edge technology with creative design to build websites that engage users and drive business growth. Whether you need a simple informational site or a complex e-commerce platform, our team has the expertise to deliver a high-quality, custom solution.",
+  " Our UI/UX design services are dedicated to creating intuitive, engaging, and aesthetically pleasing interfaces. We focus on understanding the needs and behaviors of your users to design products that offer exceptional experiences. From wireframes to high-fidelity prototypes, our team ensures every design decision enhances usability and delight.",
   "Our IT consultancy services offer strategic guidance and expert advice to help you navigate the complex world of technology. We work closely with your team to understand your business goals and challenges, providing tailored solutions that drive efficiency, innovation, and growth.",
   "These services focus on designing robust, scalable, and maintainable software systems. We ensure that your software is built on a solid foundation, capable of evolving with your business needs. Our architects consider all aspects of software development, from system design to technology selection, ensuring a cohesive and efficient final product.",
   "Our mobile app development services create engaging and high-performance mobile applications tailored to your business needs. From concept to launch, we deliver apps that provide exceptional user experiences on both iOS and Android platforms.",
@@ -22,31 +33,18 @@ export const serviceDescription = [
 
 export const uiuxSkills = [
   {
-    title: "User Research",
+    title: "Responsive Design",
     description:
-      "Conducting comprehensive research to understand user needs and pain points.",
+      "Ensuring websites look and function perfectly on all devices.",
   },
   {
-    title: "Wireframing & Prototyping",
+    title: "SEO Best Practises",
     description:
-      "Expertise in tools like Sketch, Figma, Adobe XD, and InVision.",
+      "Optimizing websites for search engines to improve visibility.",
   },
   {
-    title: "Interaction Design",
-    description: "Crafting interactive elements that enhance user experience.",
-  },
-  {
-    title: "Visual Design",
-    description:
-      "Creating visually appealing interfaces that align with brand identity.",
-  },
-  {
-    title: "User Testing",
-    description: "Ensuring designs are intuitive and meet user expectations.",
-  },
-  {
-    title: "Design Strategy",
-    description: "Ensure user experience aligns with business goals",
+    title: "Full Stack Development",
+    description: "Expertise in integrating front-end and back-end solutions.",
   },
 ];
 
@@ -101,18 +99,32 @@ export const otherSkills = [
   ],
   [
     {
-      title: "Responsive Design",
+      title: "User Research",
       description:
-        "Ensuring websites look and function perfectly on all devices.",
+        "Conducting comprehensive research to understand user needs and pain points.",
     },
     {
-      title: "SEO Best Practises",
+      title: "Wireframing & Prototyping",
       description:
-        "Optimizing websites for search engines to improve visibility.",
+        "Expertise in tools like Sketch, Figma, Adobe XD, and InVision.",
     },
     {
-      title: "Full Stack Development",
-      description: "Expertise in integrating front-end and back-end solutions.",
+      title: "Interaction Design",
+      description:
+        "Crafting interactive elements that enhance user experience.",
+    },
+    {
+      title: "Visual Design",
+      description:
+        "Creating visually appealing interfaces that align with brand identity.",
+    },
+    {
+      title: "User Testing",
+      description: "Ensuring designs are intuitive and meet user expectations.",
+    },
+    {
+      title: "Design Strategy",
+      description: "Ensure user experience aligns with business goals",
     },
   ],
   [
@@ -169,13 +181,19 @@ export const otherSkills = [
 export const steps = [
   [
     { step: "01", description: "Initial Consultation- Discovery Call" },
-    { step: "02", description: "User research- surveys, interviews.." },
-    { step: "03", description: "Wireframing - outline structure and layout" },
-    { step: "04", description: "Visual Design- high- fidelity design" },
-    { step: "05", description: "Prototyping - interactive tests" },
-    { step: "06", description: "Usability testing" },
-    { step: "07", description: "Final Designs" },
-    { step: "08", description: "Post- Launch Evaluation" },
+    {
+      step: "02",
+      description: "Planning & Gathering Requirements",
+    },
+    { step: "03", description: "Design & Prototyping" },
+    {
+      step: "04",
+      description: "Full-stack Development & 3rd party Integrations",
+    },
+    { step: "05", description: "Testing & Iterations" },
+    { step: "06", description: "Deployment to Production Environment" },
+    { step: "07", description: "Product Launch" },
+    { step: "08", description: "Post- Launch Support" },
   ],
   [
     { step: "01", description: "Initial Consultation- Discovery Call" },
@@ -216,19 +234,13 @@ export const steps = [
   ],
   [
     { step: "01", description: "Initial Consultation- Discovery Call" },
-    {
-      step: "02",
-      description: "Planning & Gathering Requirements",
-    },
-    { step: "03", description: "Design & Prototyping" },
-    {
-      step: "04",
-      description: "Full-stack Development & 3rd party Integrations",
-    },
-    { step: "05", description: "Testing & Iterations" },
-    { step: "06", description: "Deployment to Production Environment" },
-    { step: "07", description: "Product Launch" },
-    { step: "08", description: "Post- Launch Support" },
+    { step: "02", description: "User research- surveys, interviews.." },
+    { step: "03", description: "Wireframing - outline structure and layout" },
+    { step: "04", description: "Visual Design- high- fidelity design" },
+    { step: "05", description: "Prototyping - interactive tests" },
+    { step: "06", description: "Usability testing" },
+    { step: "07", description: "Final Designs" },
+    { step: "08", description: "Post- Launch Evaluation" },
   ],
   [
     { step: "01", description: "Initial Consultation- Discovery Call" },
@@ -271,17 +283,17 @@ export const benefits = [
     {
       title: "Increased User Satisfaction",
       description:
-        "Interfaces that are easy to use and visually pleasing, leading to higher user satisfaction.",
+        "A website that captures and retains users' attention with its appealing design and intuitive navigation.",
     },
     {
       title: "Higher Engagement",
       description:
-        "Designs that encourage users to interact more with your produc",
+        "An optimized web experience that turns visitors into customers.",
     },
     {
-      title: "Improved Usability",
+      title: "Robust Performance",
       description:
-        "Products that users can navigate intuitively, reducing frustration and improving retention.",
+        "A site that loads quickly, performs reliably, and scales with your business.",
     },
   ],
   [
@@ -338,17 +350,17 @@ export const benefits = [
     {
       title: "Increased User Satisfaction",
       description:
-        "A website that captures and retains users' attention with its appealing design and intuitive navigation.",
+        "Interfaces that are easy to use and visually pleasing, leading to higher user satisfaction.",
     },
     {
       title: "Higher Engagement",
       description:
-        "An optimized web experience that turns visitors into customers.",
+        "Designs that encourage users to interact more with your produc",
     },
     {
-      title: "Robust Performance",
+      title: "Improved Usability",
       description:
-        "A site that loads quickly, performs reliably, and scales with your business.",
+        "Products that users can navigate intuitively, reducing frustration and improving retention.",
     },
   ],
   [

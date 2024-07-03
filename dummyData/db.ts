@@ -3,6 +3,7 @@ import {
   benefits,
   otherSkills,
   serviceDescription,
+  serviceShortDesc,
   serviceTitles,
   steps,
   uiuxSkills,
@@ -44,6 +45,8 @@ export const blogs: BlogPost[] = Array(6)
 export const service: IServices = {
   _id: "1",
   title: "UI/UX Design",
+  short_desc:
+    " We blend creativity with functionality to craft user-centric designs that captivate, engage, and inspire..",
   description:
     " Our UI/UX design services are dedicated to creating intuitive, engaging, and aesthetically pleasing interfaces. We focus on understanding the needs and behaviors of your users to design products that offer exceptional experiences. From wireframes to high-fidelity prototypes, our team ensures every design decision enhances usability and delight.",
   skills: [
@@ -112,6 +115,7 @@ export const services: IServices[] = Array(8)
       ...srv,
       _id: (index + 1).toString(),
       title: serviceTitles[index],
+      short_desc: serviceShortDesc[index],
       description: serviceDescription[index],
       skills: index === 0 ? uiuxSkills : otherSkills[index - 1],
       steps: steps[index],

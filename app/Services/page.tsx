@@ -1,16 +1,17 @@
-import Packages from "./Packages";
-import Cards from "./cards";
-import ServicesHero from "./Hero";
-import Hero from "./Hero";
-import Testimonies from "./testimonies";
+"use client";
 
-export default function Services(){
-  return(
+import Packages from "../components/ui/Packages";
+import Testimonies from "../Home/Testimonies";
+import AllServices from "./AllServices";
+import ServicesHero from "./Hero";
+
+export default function Services() {
+  return (
     <main className="">
-      <ServicesHero/>
-      <Cards/>
-      <Packages/>
-      <Testimonies/>
+      <ServicesHero />
+      <AllServices />
+      <Packages />
+      <Testimonies />
     </main>
-  )
+  );
 }

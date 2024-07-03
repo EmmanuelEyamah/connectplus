@@ -1,207 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-.HeroServices{
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    padding-top: 100px;
-    font-weight: 600;
-    line-height: 120%; /* 24px */
-    font-variant: small-caps;
+.HeroServices {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  padding-top: 100px;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  font-variant: small-caps;
 }
-.HeroContent{
-
-font-family: "Work Sans";
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-width: 600px; text-align: center;
+.HeroContent {
+  font-family: "Work Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 600px;
+  text-align: center;
 }
-.HeroContent1{
-    color: var(--Light-TextBlack-90, rgba(32, 30, 30, 0.90));
-text-align: center;
-font-family: Montserrat;
-font-size: 20px;
-width:600px;
-line-height: 160%; /* 32px */
+.HeroContent1 {
+  color: var(--Light-TextBlack-90, rgba(32, 30, 30, 0.9));
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  width: 600px;
+  line-height: 160%; /* 32px */
 }
-.Herobtn{
-    color: #FCFCFC;
-    font-family: "Work Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    border-radius: 4px;
-background: #0A52F6;
-height: 48px;
-padding: 0px 48px;
+.Herobtn {
+  color: #fcfcfc;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 4px;
+  background: #0a52f6;
+  height: 48px;
+  padding: 0px 48px;
 }
-.HeroImage{
+.HeroImage {
   display: flex;
 
-justify-content: flex-end;
-align-items: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
 
-flex-shrink: 0;
-align-self: stretch;
-    
+  flex-shrink: 0;
+  align-self: stretch;
 }
 
 /* //styling the service card content */
 
-.Servicecard{
-    display: flex;
-    width: 266px;
-    height: 278px;
-padding: 5px 16px 32px 16px;
-flex-direction: column;
-justify-content: center;
-/* align-items: flex-start;
+.Servicecard {
+  display: flex;
+  width: 266px;
+  height: 278px;
+  padding: 5px 16px 32px 16px;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start;
 gap: 16px; */
-border-radius: 12px;border-radius: 12px;
-border: 1px solid var(--Light-TextBlack-20, #D2D2D2);
-background: var(--Light-TextBlack-100, #201E1E);
+  border-radius: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--Light-TextBlack-20, #d2d2d2);
+  background: var(--Light-TextBlack-100, #201e1e);
 }
 
-
-.Servicecard h5{
-    align-self: stretch;
-font-family: "Work Sans";
-font-size: 20px;
-color: #fff;;
-font-style: normal;
-font-weight: 700;
-line-height: 120%; /* 24px */
+.Servicecard h5 {
+  align-self: stretch;
+  font-family: "Work Sans";
+  font-size: 20px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
 }
 
-.ServiceInner{
-    padding-top: 30px;
+.ServiceInner {
+  padding-top: 30px;
 }
-.Serviceicon{
-    padding-bottom: 10px;
+.Serviceicon {
+  padding-bottom: 10px;
 }
-.Servicecard p{
-    color: var(--Light-TextWhite-80, rgba(251, 250, 250, 0.80));
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 130%; /* 18.2px */
-letter-spacing: 0.28px;
+.Servicecard p {
+  color: var(--Light-TextWhite-80, rgba(251, 250, 250, 0.8));
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 18.2px */
+  letter-spacing: 0.28px;
 }
-.Servicecard a{
-    text-decoration: underline;
-    color: var(--Light-TextWhite-80, rgba(251, 250, 250, 0.80));
-font-family: "Work Sans";
-font-size: 14px;
-font-style: normal;
-font-weight:600;
-line-height: normal;
-text-transform: capitalize;
+.Servicecard a {
+  text-decoration: underline;
+  color: var(--Light-TextWhite-80, rgba(251, 250, 250, 0.8));
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
 }
-.Servicecard a span{
-    text-decoration: underline;
+.Servicecard a span {
+  text-decoration: underline;
 }
 /* //service 1 */
 
-.Servicecard1{
-    display: flex;
-    width: 266px;
-    height: 278px;
-padding: 5px 16px 32px 16px;
-flex-direction: column;
-justify-content: center;
-/* align-items: flex-start;
+.Servicecard1 {
+  display: flex;
+  width: 266px;
+  height: 278px;
+  padding: 5px 16px 32px 16px;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start;
 gap: 16px; */
-border-radius: 12px;
-border: 1px solid var(--Light-TextBlack-20, #D2D2D2);
-background: var( #fff);
+  border-radius: 12px;
+  border: 1px solid var(--Light-TextBlack-20, #d2d2d2);
+  background: var(#fff);
 }
 
-.Servicecard1 h5{
-color: var(--Light-TextBlack-90, rgba(32, 30, 30, 0.90));
-    
-    align-self: stretch;
-font-family: "Work Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 120%; /* 24px */
+.Servicecard1 h5 {
+  color: var(--Light-TextBlack-90, rgba(32, 30, 30, 0.9));
+
+  align-self: stretch;
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
 }
 
+.Servicecard1 p {
+  color: var(--Light-TextWhite-80, #4d4b4b);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 18.2px */
+  letter-spacing: 0.28px;
+}
+.Servicecard1 a {
+  text-decoration: underline;
+  color: var(--Light-TextBlack-90, rgba(32, 30, 30, 0.9));
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.Servicecard1 a span {
+  text-decoration: underline;
+}
 
-.Servicecard1 p{
-    color: var(--Light-TextWhite-80, #4D4B4B);
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 130%; /* 18.2px */
-letter-spacing: 0.28px;
-}
-.Servicecard1 a{
-    text-decoration: underline;
-    color: var(--Light-TextBlack-90, rgba(32, 30, 30, 0.90));
-font-family: "Work Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-transform: capitalize;
-}
-.Servicecard1 a span{
-    text-decoration: underline;
-}
-
-.ServicecardBlue{
-    display: flex;
-    width: 266px;
-    height: 572px;
-    padding: 53.333px 16px;
-flex-direction: column;
-justify-content: flex-end;
-align-items: flex-start;
-/* gap: 16px;
+.ServicecardBlue {
+  display: flex;
+  width: 266px;
+  height: 572px;
+  padding: 53.333px 16px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* gap: 16px;
 flex: 1 0 0; */
-border-radius: 13.333px;
-border: 0.667px solid var(--Light-TextBlack-20, #D2D2D2);
-background: #0A52F6;
+  border-radius: 13.333px;
+  border: 0.667px solid var(--Light-TextBlack-20, #d2d2d2);
+  background: #0a52f6;
 }
 
-.ServicecardBlue h5{
-    color: var(--Light-TextWhite-100, #FBFAFA);
-    
-    align-self: stretch;
-font-family: "Work Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 120%; /* 24px */
+.ServicecardBlue h5 {
+  color: var(--Light-TextWhite-100, #fbfafa);
+
+  align-self: stretch;
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
 }
 
-
-.ServicecardBlue p{
-    color: var(--Light-TextWhite-80, rgba(251, 250, 250, 0.80));
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 130%; /* 18.2px */
-letter-spacing: 0.28px;
+.ServicecardBlue p {
+  color: var(--Light-TextWhite-80, rgba(251, 250, 250, 0.8));
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 18.2px */
+  letter-spacing: 0.28px;
 }
-.ServicecardBlue a{
-    text-decoration: underline;
-    color: var(--Light-TextWhite-80, rgba(251, 250, 250, 0.80));
-font-family: "Work Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-transform: capitalize;
+.ServicecardBlue a {
+  text-decoration: underline;
+  color: var(--Light-TextWhite-80, rgba(251, 250, 250, 0.8));
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
 }
-.ServicecardBlue a span{
-    text-decoration: underline;
+.ServicecardBlue a span {
+  text-decoration: underline;
 }

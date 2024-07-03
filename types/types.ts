@@ -28,6 +28,7 @@ export interface IServicesStep {
 export interface IServices {
   _id: string;
   title: string;
+  short_desc: string;
   description: string;
   skills: IServicesSkills[];
   steps: IServicesStep[];
