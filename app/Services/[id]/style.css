@@ -4,70 +4,36 @@
 /* hero */
 .overview{
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-font-style: normal;
-line-height: 120%; /* 24px */
+
 font-variant: small-caps;
 }
 .uiux{
 font-family: "Work Sans";
-font-style: normal;
-font-weight: 700;
-line-height: 120%; /* 48px */
+
 }
 .ui_content{
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
-font-weight: 500;
+
 }
-.uibutton{
-  color: #FCFCFC;
+.uiButton{
+
 font-family: "Work Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+
 }
-.UiButton{
-  /* display: flex; */
-height: 48px;
-padding: 0px 48px;
-/* justify-content: center;
-align-items: center; */
-gap: 10px;
-border-radius: 4px;
-background: #0A52F6;
-color:#fff;
-}
+
 /* -------end hero------ */
 /* -----skills----- */
 .skills{
-  color: var(--Light-TextBlack-80, #4D4B4B);
 font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: 120%; /* 24px */
 font-variant: small-caps;
 }
 .skillContent{
-  color: var(--Light-TextBlack-100, #201E1E);
-text-align: center;
 font-family: "Work Sans";
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 120%; /* 48px */
-text-transform: capitalize;
 }
 .skillCardTitle{
-  color: #000;
+
 font-family: "Work Sans";
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: 120%; /* 33.6px */
+
 }
 .skillCardDesc{
   color: #000;
@@ -191,42 +157,25 @@ line-height: 120%;
 padding-top: 40px;
 
 }
+.font-work{
+  font-family: "Work Sans";
+
+}
 /* //innerLeft section */
 .innerLeft{
 
 align-self: stretch;
 }
 .cardContent{
-  color: var(--Light-TextWhite-100, #FBFAFA);
 font-family: "Work Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 120%; 
-display: flex;
-justify-content: center;
-align-items: center;/* 19.2px */
+
 }
-.UiSomeCard:hover{
-  border-radius: 8px;
-  background: var(--Light-TextWhite-100, #FBFAFA);
-  cursor: pointer;
-  color: #1C1E20;
-}
-.cardContent:hover{
-  color: #1C1E20;
-  transition: .7 ease-in;
-}
+
 .center-head{
   font-family: "Work Sans";
-  font-style: normal;
-font-weight: 700;
-line-height: 120%
+
 }
 .content-body{
   font-family: Montserrat;
-font-style: normal;
-font-weight: 400;
-line-height: 120%;
-margin:10px 70px;
+
 }

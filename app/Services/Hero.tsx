@@ -34,7 +34,7 @@ const ServicesHero = () => {
             <button className=" Herobtn text-[#fcfcfc] lg:text-[16px] text-[14px] h-[48px] px-[24px] lg:px-[48px] bg-[#0a52f6] rounded-[4px]  font-semibold leading-normal ">Get Started</button>
           </section>
 
-           <div className="  flex items-center justify-center pt-[120px] gap-4">
+           {/* <div className="  flex items-center justify-center pt-[120px] gap-4">
             <img
               className="HeroImage"
               src="/assets/ServiceImg.png"
@@ -45,7 +45,7 @@ const ServicesHero = () => {
             <img className="" src="/assets/ServiceImg.png" alt="image" />
             <img className="" src="/assets/ServiceImg.png" alt="image" />
             <img className="" src="/assets/ServiceImg.png" alt="image" />
-          </div> 
+          </div>  */}
         </div>
       </div>
     </section>

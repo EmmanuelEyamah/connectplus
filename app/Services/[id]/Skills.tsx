@@ -15,29 +15,26 @@ export interface SkillsProps {
 }
 const Skills: FC<SkillsProps> = ({ service, id }) => {
   return (
-    <div className="w-full h-full py-20 px-24 bg-white">
+    <div className="w-full h-full lg:py-20 lg:px-24 px-10 py-15 bg-white">
       <div className="w-full h-full container mx-auto flex flex-col items-center justify-center gap-5">
         <BaseTypography
           label="Our skills"
-          fontSizeLarge="lg:text-[20px]"
-          className=" leading-6 uppercase skills font-bold font-montserrat"
+          className=" leading-6 uppercase skills text-[#4D4B4B] lg:text-[20px] text-[16px] font-semibold small-caps font-montserrat"
         />
         <Typography
-          className=" text-5xl font-bold text-center font-work-sans leading-normal skillContent text-[#201E1E]"
+          className=" lg:text-[40px] text-[26px] font-bold text-center font-work-sans leading-[120%] skillContent capitalize text-[#201E1E]"
           {...commonProps}
         >
           Our Expertise Sets Us Apart
         </Typography>
 
         <div className="mt-8 w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 pb-7">
             {service?.skills.map((service, index) => (
               <Card
-                className="mt-6 w-full h-[279px] rounded-none shadow-none"
+                className="mt-6 w-full h-[290px] rounded-none shadow-none border-r-2 border-b-2 border-[#0A52F6] border-dashed p-2"
                 style={{
-                  borderRight: "2px dashed #0A52F6",
-                  borderBottom: "2px dashed #0A52F6",
-                  padding: "10px",
+                  borderColor:"#0A52F6"
                 }}
                 {...commonProps}
                 key={`service-card-${index}`}
@@ -56,13 +53,12 @@ const Skills: FC<SkillsProps> = ({ service, id }) => {
                   )}
                   <BaseTypography
                     label={service.title}
-                    fontSizeLarge="lg:text-[23px]"
-                    className="leading-7 skillCardTitle"
+                    className="leading-7 lg:text-[28px] sm:text-[25px] text-23px] skillCardTitle text-[#000] font-bold "
                   />
                   <BaseTypography
                     label={service.description}
                     fontSizeLarge="lg:text-[20px]"
-                    className="leading-7 skillCardDesc  font-normal"
+                    className="leading-7 skillCardDesc  font-normal pb-[10px]"
                   />
                 </CardBody>
               </Card>

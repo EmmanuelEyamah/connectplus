@@ -15,15 +15,15 @@ export interface BenefitProps {
 }
 const Benefit: FC<BenefitProps> = ({ service }) => {
   return (
-    <div className="w-full h-full py-20 px-24 bg-white">
+    <div className="w-full h-full py-20 lg:px-24 px-10 bg-white">
       <div className="w-full h-full container mx-auto flex flex-col items-center justify-center gap-5">
         <BaseTypography
           label="Your Benefits"
-          fontSizeLarge="lg:text-[20px]"
-          className=" leading-6 uppercase skills font-bold font-montserrat"
+          
+          className="leading-6 uppercase skills text-[#4D4B4B] lg:text-[20px] text-[16px] font-semibold small-caps font-montserrat"
         />
         <Typography
-          className=" text-5xl font-bold text-center font-work-sans leading-normal skillContent text-[#201E1E]"
+          className="lg:text-[40px] text-[26px] font-bold text-center font-work-sans leading-[120%] skillContent capitalize text-[#201E1E]"
           {...commonProps}
         >
           What You Can Expect From Us
@@ -33,9 +33,9 @@ const Benefit: FC<BenefitProps> = ({ service }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
             {service?.benefits.map((service, index) => (
               <Card
-                className="group mt-6 w-full h-[279px] rounded-none card_benefits"
+                className="group mt-6 w-full h-[279px] rounded-none card_benefits border-r-[1.2px] border-l-[0.3px] border-dashed "
                 style={{
-                  borderRight: "1.2px dashed var(--LINEAR-LBUE, #0A52F6)",
+                  borderColor: "var(--LINEAR-LBUE, #0A52F6)",
                 }}
                 {...commonProps}
                 key={`service-card-${index}`}
@@ -48,13 +48,13 @@ const Benefit: FC<BenefitProps> = ({ service }) => {
                   <StarOutlined />
                   <BaseTypography
                     label={service.title}
-                    fontSizeLarge="lg:text-[23px]"
-                    className="leading-7 skillCardTitle"
+                
+                    className="leading-7 lg:text-[28px] sm:text-[25px] text-23px] skillCardTitle text-[#000] font-bold "
                   />
                   <BaseTypography
                     label={service.description}
                     fontSizeLarge="lg:text-[20px]"
-                    className="leading-7 skillCardDesc  font-normal"
+                    className="leading-7 skillCardDesc  font-leading-7 skillCardDesc  font-normal pb-[10px]"
                   />
                 </CardBody>
               </Card>

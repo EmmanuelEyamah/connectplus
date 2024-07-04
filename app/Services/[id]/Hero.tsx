@@ -12,36 +12,33 @@ export interface HeroProps {
 const Hero: FC<HeroProps> = ({ service }) => {
 
   return (
-    <section className="w-full h-full bg-[# ] py-32 px-24">
+    <section className="w-full h-full bg-[# ] lg:py-32 lg:px-24 small:py-16 small:px-15 py-11 px-15">
       <div className="mx-auto container w-full h-full relative flex flex-col lg:flex-row lg:flex justify-evenly items-start lg:items-center lg:pt-15 p-5 lg:p-0 gap-16 lg:gap-0">
         <div className="w-full lg:w-[500px] relative flex flex-col gap-3">
           <Typography
-            className="text-[#4D4B4B] font-montserrat w-full text-center lg:text-left text-[18px] font-medium flex gap-1 items-center justify-center lg:justify-start overview font-montserrat"
+            className="text-[#4D4B4B] font-montserrat w-full text-center lg:text-left text-[18px] font-semibold leading-[120%] flex gap-1 items-center justify-center lg:justify-start  font-montserrat"
             {...commonProps}
           >
             OVERVIEW
           </Typography>
           <Typography
-            className="text-[#000] text-[28px] font-montserrat text-center lg:text-left lg:text-[45px] font-bold w-full lg:w-[434px] leading-[130%] uiux font-work-sans"
+            className="text-[#201E1E] text-[28px] font-montserrat text-center lg:text-left lg:text-[45px] font-bold w-full lg:w-[434px] leading-[120%] uiux font-work-sans"
             {...commonProps}
           >
             {service?.title}
           </Typography>
           <Typography
-            className="text-[#4D4B4B] text-[18px] font-montserrat text-center lg:text-left font-medium w-full lg:w-[464px] leading-[160%] ui_content"
+            className="text-[#4D4B4B] text-[18px] font-montserrat text-center lg:text-left font-medium w-full lg:w-[464px]  leading-[160%] ui_content"
             {...commonProps}
           >
             {service?.description}
           </Typography>
 
           <div className="flex items-center justify-center lg:justify-start gap-5 mt-7">
-            <button className="UiButton">
-              <span
-                className="uiButton"
-                style={{ textTransform: "capitalize" }}
-              >
+            <button className="UiButton text-[#FCFCFC] text-[14px] lg:text-[16px]  font-semibold bg-[#0A52F6] gap-[10px] lg:px-[48px] lg:py-[15px] px-[40px] py-[13px] rounded-[4px]">
+              
                 Get Started
-              </span>
+              
             </button>
           </div>
         </div>
