@@ -2,41 +2,24 @@
 
 .HeroServices {
   font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  padding-top: 100px;
   font-weight: 600;
   line-height: 120%; /* 24px */
   font-variant: small-caps;
 }
 .HeroContent {
   font-family: "Work Sans";
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
+
   line-height: normal;
-  width: 600px;
-  text-align: center;
 }
 .HeroContent1 {
   color: var(--Light-TextBlack-90, rgba(32, 30, 30, 0.9));
-  text-align: center;
+
   font-family: Montserrat;
-  font-size: 20px;
-  width: 600px;
-  line-height: 160%; /* 32px */
+ 
 }
 .Herobtn {
-  color: #fcfcfc;
+ 
   font-family: "Work Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  border-radius: 4px;
-  background: #0a52f6;
-  height: 48px;
-  padding: 0px 48px;
 }
 .HeroImage {
   display: flex;
