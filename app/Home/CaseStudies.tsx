@@ -12,18 +12,19 @@ const tags = ["Research", "Figma", "React", "Django"];
 
 const CaseStudies = () => {
   return (
-    <div className="w-full h-full py-20 px-24 bg-white">
+    <div className="w-full h-full py-10 px-12 lg:py-20 lg:px-24 bg-white">
       <div className="w-full h-full container mx-auto flex flex-col items-center justify-center gap-5">
         <BaseTypography
           label="Our Case Studies"
           fontSizeLarge="lg:text-[40px]"
+          fontSizeSmall="text-[32px]"
           className=" leading-[48px] font-bold"
           color="text-[#000]"
         />
         <BaseTypography
           label="Our case studies showcase the diverse range of projects we’ve successfully delivered, highlighting our ability to drive business growth and create exceptional user experiences."
           fontSizeLarge="lg:text-[20px]"
-          className=" leading-[32px] font-normal text-center w-[708px]"
+          className=" leading-[32px] font-normal text-center w-full lg:w-[708px]"
           color="text-[#201E1EE5]"
         />
       </div>
@@ -31,7 +32,7 @@ const CaseStudies = () => {
       <div className="mt-14 flex items-center justify-center">
         <Card
           {...commonProps}
-          className="w-full h-full lg:h-[360px] max-w-[59rem] flex-row p-4 gap-6 rounded-3xl border border-[#F4F3F3]"
+          className="w-full h-full lg:h-[360px] max-w-[59rem] flex-col lg:flex-row p-4 gap-6 rounded-3xl border border-[#F4F3F3]"
         >
           <div className="w-full h-full lg:w-[495px] relative flex items-start">
             <img

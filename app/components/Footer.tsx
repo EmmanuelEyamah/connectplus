@@ -56,7 +56,7 @@ const Footer = () => {
             <img src="/assets/logo.png" alt="logo" className="" />
             <hr className="mt-9 border-t-2 border-[#FFFFFF1F]" />
           </div>
-          <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+          <div className="grid w-full gap-5 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
             {SITEMAP.map(({ title, links }, key) => (
               <div key={key} className="w-full">
                 <BaseTypography
@@ -92,8 +92,8 @@ const Footer = () => {
                 className=" font-medium leading-normal"
                 color="text-[#FBFAFAB2]"
               />
-              <div className="w-full flex gap-2 mt-7">
-                <div className="w-[120px]">
+              <div className="w-full flex flex-col gap-3 mt-7">
+                <div className="w-full">
                   <Input
                     crossOrigin={undefined}
                     className="w-[150px] rounded-3xl bg-white placeholder:text-[#636262] placeholder:opacity-100"
@@ -107,7 +107,7 @@ const Footer = () => {
                 </div>
                 <Button
                   size="sm"
-                  className="bg-[#0A52F6] rounded-3xl"
+                  className="bg-[#0A52F6] rounded-xl w-1/2"
                   {...commonProps}
                 >
                   Subscribe

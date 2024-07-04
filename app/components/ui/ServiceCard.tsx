@@ -12,6 +12,7 @@ export interface CardProps {
   description?: string;
   icon?: React.ReactNode;
   PrimaryColor?: boolean;
+  border?: boolean;
 }
 export const ServiceCard: FC<CardProps> = ({
   backgroundColor = "bg-black",
@@ -21,10 +22,13 @@ export const ServiceCard: FC<CardProps> = ({
   description,
   icon,
   PrimaryColor = false,
+  border = false,
 }) => {
   return (
     <div
-      className={`w-[370px] ${height} flex flex-col justify-end px-4 py-9 gap-4 ${backgroundColor} rounded-2xl`}
+      className={`w-[370px] ${height} flex flex-col justify-end px-4 py-9 gap-4 ${backgroundColor} rounded-2xl ${
+        border ? "border border-[#D2D2D2]" : ""
+      }`}
     >
       {icon}
       <BaseTypography

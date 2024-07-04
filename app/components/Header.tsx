@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   Collapse,
@@ -49,8 +49,24 @@ function NavList() {
 }
 
 const Header = () => {
-  const [openNav, setOpenNav] = React.useState(false);
+  const [openNav, setOpenNav] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const handleWindowResize = () =>
     window.innerWidth >= 960 && setOpenNav(false);
 
@@ -64,7 +80,9 @@ const Header = () => {
 
   return (
     <Navbar
-      className="container mx-auto w-full px-12 py-3 rounded-none bg-[#FBFAFA] shadow-none"
+      className={`container mx-auto max-w-full px-12 py-3 rounded-none bg-[#FBFAFA] shadow-none ${
+        isSticky ? "fixed top-0 z-[10000]" : ""
+      }`}
       {...commonProps}
     >
       <div className="flex items-center justify-between text-blue-gray-900">

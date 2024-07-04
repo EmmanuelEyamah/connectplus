@@ -3,9 +3,9 @@ import { BaseTypography } from "../components/ui/Typography";
 
 const Testimonies = () => {
   return (
-    <div className="w-full h-full py-28 px-24 bg-white">
+    <div className="w-full h-full py-10 lg:py-28 px-7 lg:px-24 bg-white">
       <div className="w-full h-full container mx-auto flex items-start gap-10">
-        <div className="flex flex-col gap-7 lg:w-[350px]">
+        <div className="flex flex-col gap-3 lg:gap-7 lg:w-[350px]">
           <BaseTypography
             label="TESTIMONIALS"
             fontSizeLarge="lg:text-[20px]"
@@ -15,7 +15,7 @@ const Testimonies = () => {
           <BaseTypography
             label="What Our Clients Are Saying"
             fontSizeLarge="lg:text-[40px]"
-            className=" leading-[48px] font-bold lg:w-[316px]"
+            className="leading-[28px] lg:leading-[48px] w-full font-bold lg:w-[316px]"
             color="text-[#000]"
           />
           <BaseTypography

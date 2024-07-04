@@ -8,7 +8,7 @@ import NewsLetter from "./components/ui/NewsLetter";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-hidden">
       <Hero />
       <About />
       <Services />
