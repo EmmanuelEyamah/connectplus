@@ -17,8 +17,8 @@ const Hero = () => {
   };
   return (
     <section className="flex flex-col items-center pt-20 gap-16 bg-[#F3F3F3] ">
-      <div className=" flex flex-col justify-center items-center gap-10 max-w-screen-xl mx-auto">
-        <div className=" flex flex-col justify-center items-center gap-6 ">
+      <div className=" flex flex-col justify-center items-center gap-5 lg:gap-10 max-w-screen-xl mx-auto">
+        <div className=" flex flex-col justify-center items-center gap-2 lg:gap-6 ">
           <BaseTypography
             label="About Us"
             fontSizeLarge="lg:text-lg"
@@ -97,12 +97,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="bg-[#011F56] container relative w-full h-[450px] px-20 py-36 flex justify-end">
-        <div className="flex flex-col gap-5">
+      <div className="bg-[#011F56] container relative w-full h-[500px] lg:h-[450px] lg:px-20 lg:py-36 pl-[220px] flex items-center justify-start lg:justify-end" >
+        <div className="flex flex-col gap-5 w-full">
           <BaseTypography
             label="“Success is the result of hard work, unwavering dedication, and relentless effort.”"
             fontSizeLarge="lg:text-[28px]"
-            className="font-work-sans font-semibold leading-normal w-[519px]"
+            className="font-work-sans font-semibold leading-normal w-[250px] lg:w-[519px]"
             color="text-white"
           />
           <BaseTypography
@@ -112,7 +112,7 @@ const Hero = () => {
             color="text-white"
           />
 
-          <div className="absolute left-60">
+          <div className="absolute left-24 lg:left-60">
             <BookIcon />
           </div>
           <div className="absolute left-0 bottom-0">

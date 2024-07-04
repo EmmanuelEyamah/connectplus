@@ -13,7 +13,7 @@ import { servicesData } from "./data";
 
 const Services = () => {
   return (
-    <div className="w-full h-full py-20 px-24 bg-white">
+    <div className="w-full h-full py-10  lg:py-20 px-8 lg:px-24 bg-white">
       <div className="w-full h-full container mx-auto flex flex-col items-center justify-center gap-5">
         <BaseTypography
           label="What We Do"
@@ -21,7 +21,7 @@ const Services = () => {
           className=" leading-6 uppercase"
         />
         <Typography
-          className=" text-5xl font-bold text-center leading-normal text-[#201E1E]"
+          className="text-[28px] lg:text-5xl font-bold text-center leading-normal text-[#201E1E]"
           {...commonProps}
         >
           We Provide <span className="text-[#0A52F6]">A+</span> Products In
@@ -30,15 +30,16 @@ const Services = () => {
         <BaseTypography
           label="Our mission is to empower businesses to reach their full potential through a perfect blend of creativity, technical expertise, and strategic insight."
           fontSizeLarge="lg:text-[20px]"
-          className=" leading-7 font-normal text-center w-[614px]"
+          fontSizeSmall="text-[16px]"
+          className=" leading-7 font-normal text-center w-full lg:w-[614px]"
         />
 
         <div className="mt-8">
-          <div className="flex w-full gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-6">
             {servicesData.map((service, index) => {
               return (
                 <Card
-                  className="group mt-6 w-[294px] h-[375px] hover:bg-[#0A52F6]"
+                  className="group mt-6 w-full h-full. hover:bg-[#0A52F6]"
                   {...commonProps}
                   key={`service-card-${index}`}
                 >

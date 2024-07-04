@@ -4,7 +4,7 @@ const VectorBG = () => {
   return (
     <div>
       <svg
-        width="1350"
+        width="1450"
         height="47"
         viewBox="0 0 1440 47"
         fill="none"

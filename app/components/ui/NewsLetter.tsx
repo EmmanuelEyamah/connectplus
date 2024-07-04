@@ -7,19 +7,19 @@ import AppButton from "./Button";
 
 const NewsLetter = () => {
   return (
-    <div className="w-full h-[200px] py-20 px-24 bg-[#CDCDCD]">
+    <div className="hidden lg:block w-full h-[200px] py-10 px-12 lg:py-20 lg:px-24 bg-[#CDCDCD]">
       <div className="w-full h-full container mx-auto relative">
-        <div className="bg-[#002B7D] flex items-center gap-10 absolute top-[-150px] rounded-[40px] py-[88px] px-24 h-[360px] w-[1200px]">
+        <div className="bg-[#002B7D] flex-col lg:flex items-center gap-10 absolute top-[-150px] rounded-[40px] py-[20px] lg:py-[88px] px-10 lg:px-24 h-[360px] w-full lg:w-[1200px] z-50">
           <Typography
             {...commonProps}
-            className="w-[677px] text-[40px] text-white font-bold capitalize"
+            className="w-full lg:w-[677px] text-[32px] lg:text-[40px] text-white font-bold capitalize"
           >
             The Best Talent <span className="font-normal">for your</span> next
             project
           </Typography>
 
-          <div className="flex flex-col gap-8 items-start">
-            <div className="w-[465px]">
+          <div className="flex flex-col gap-4 lg:gap-8 items-start">
+            <div className="w-full lg:w-[465px]">
               <Input
                 crossOrigin={undefined}
                 className="rounded-3xl bg-inherit placeholder:text-[#636262] placeholder:opacity-100"

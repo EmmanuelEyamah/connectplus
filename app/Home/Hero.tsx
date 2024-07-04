@@ -8,7 +8,7 @@ import AppButton from "../components/ui/Button";
 
 const Hero = () => {
   return (
-    <section className="w-full h-full bg-[#F3F3F3] py-32 px-24">
+    <section className="w-full h-full bg-[#F3F3F3] px-8 lg:py-32 lg:px-24">
       <div className="mx-auto container w-full h-full relative flex flex-col lg:flex-row lg:flex justify-evenly items-start lg:items-center lg:pt-15 p-5 lg:p-0 gap-16 lg:gap-0">
         <div className="w-full lg:w-[500px] relative flex flex-col gap-3">
           <Typography

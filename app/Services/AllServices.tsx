@@ -57,6 +57,13 @@ const AllServices = () => {
                   )
                 }
                 PrimaryColor={index === 0 || index === 2 || index === 6}
+                border={
+                  index === 1 ||
+                  index === 3 ||
+                  index === 4 ||
+                  index === 5 ||
+                  index === 7
+                }
               />
             </div>
           ))}
