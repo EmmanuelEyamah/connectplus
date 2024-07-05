@@ -34,34 +34,35 @@ const items = [
 
 const Faq = () => {
   return (
-    <div className="w-full h-full py-20 px-24 bg-white">
-      <div className="w-full h-full container mx-auto flex flex-col items-center gap-24">
-        <div className="flex flex-col items-center justify-center gap-5">
-          <BaseTypography
-            label="FAQ"
-            fontSizeLarge="lg:text-[20px]"
-            className=" leading-[24px] font-semibold font-montserrat font-small-caps"
-            color="text-[#4D4B4B]"
-          />
-          <BaseTypography
-            label="Frequently Asked Questions"
-            fontSizeLarge="lg:text-[48px]"
-            className=" leading-normal font-bold font-work-sans"
-            color="text-[#201E1E]"
-          />
-          <BaseTypography
-            label="Here, we've compiled answers to common questions about our services, process, and what sets us apart."
-            fontSizeLarge="lg:text-[20px]"
-            className=" leading-[32px] font-normal font-montserrat text-center w-[900px]"
-            color="text-[#201E1EE6]"
-          />
-        </div>
-
-        <div className="mb-[100px] w-[1050px] px-12">
-          <AccordionComponent items={items} />
-        </div>
+    
+    <div className="w-full h-full container mx-auto flex flex-col items-center gap-10 lg:gap-24">
+      <div className="flex flex-col items-center justify-center gap-5 text-center px-4">
+        <BaseTypography
+          label="FAQ"
+          fontSizeLarge="lg:text-[20px] text-[18px]"
+          className="leading-[24px] font-semibold font-montserrat font-small-caps"
+          color="text-[#4D4B4B]"
+        />
+        <BaseTypography
+          label="Frequently Asked Questions"
+          fontSizeLarge="lg:text-[48px] text-[30px]"
+          className="leading-normal font-bold font-work-sans"
+          color="text-[#201E1E]"
+        />
+        <BaseTypography
+          label="Here, we've compiled answers to common questions about our services, process, and what sets us apart."
+          fontSizeLarge="lg:text-[20px] text-[16px]"
+          className="leading-[32px] font-normal font-montserrat text-center w-full max-w-[900px]"
+          color="text-[#201E1EE6]"
+        />
+      </div>
+  
+      <div className="mb-20 w-full max-w-[1050px] px-4 lg:px-12">
+        <AccordionComponent items={items} />
       </div>
     </div>
+
+  
   );
 };
 

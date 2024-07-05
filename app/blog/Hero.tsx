@@ -8,78 +8,74 @@ import VectorBG from "../components/svg/VectorBG";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[820px] bg-[#011F56] overflow-hidden">
-      <div className="relative py-24 px-24 container mx-auto">
-        <div className="w-full h-full container mx-auto flex items-center gap-16">
-          <div className="flex flex-col gap-4 w-[550px]">
-            <BaseTypography
-              label="Welcome To The Connect+ Blog"
-              fontSizeLarge="lg:text-[52px]"
-              className=" font-work-sans font-bold leading-normal w-[512px]"
-              color="text-[#FBFAFA]"
-            />
-            <BaseTypography
-              label="Stay tuned with the latest technews and how we polan on leveragingthem."
-              fontSizeLarge="lg:text-[18px]"
-              className="font-montserrat font-medium leading-[28.3px] w-[464px]"
-              color="text-[#FBFAFACD]"
-            />
-          </div>
-          <div className="w-[600px] flex flex-col gap-3 items-start">
-            <div className="flex items-center justify-center py-2 px-3 gap-3 rounded-[8px] bg-[#0A52F6] ">
-              <div className="w-8 h-8">
-                <img
-                  src="/assets/fire.gif"
-                  alt="fire icon"
-                  className="w-full h-full"
-                />
-              </div>
-              <BaseTypography
-                label="#freshoffthepress"
-                fontSizeLarge="lg:text-[18px]"
-                className=" font-montserrat font-medium leading-[24px] w-[512px]"
-                color="text-[#FBFAFA]"
-              />
-            </div>
-            <div className="h-[314px] rounded-2xl w-[575px]">
+    <div className="w-full bg-[#011F56] overflow-hidden">
+    <div className="py-10 lg:py-24 px-5 lg:px-24 container mx-auto">
+      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+        <div className="flex flex-col gap-4 w-full lg:w-[550px]">
+          <BaseTypography
+            label="Welcome To The Connect+ Blog"
+            fontSizeLarge="text-[32px] lg:text-[52px]"
+            className="font-work-sans font-bold leading-normal text-[#FBFAFA]"
+          />
+          <BaseTypography
+            label="Stay tuned with the latest tech news and how we plan on leveraging them."
+            fontSizeLarge="text-[16px] lg:text-[18px]"
+            className="font-montserrat font-medium leading-[24px] text-[#FBFAFACD]"
+          />
+        </div>
+        <div className="w-full lg:w-[600px] flex flex-col gap-3 items-start">
+          <div className="flex items-center justify-center py-2 px-3 gap-3 rounded-[8px] bg-[#0A52F6] w-full">
+            <div className="w-8 h-8">
               <img
-                src="/assets/case-img.jpg"
-                alt="case-studies img"
-                className="rounded-2xl w-full h-full object-cover "
+                src="/assets/fire.gif"
+                alt="fire icon"
+                className="w-full h-full"
               />
             </div>
-            <div className="flex flex-col gap-4">
-              <div className="w-[575px] flex justify-between items-start">
-                <h4 className="text-[14px] font-medium leading-normal font-montserrat text-[#FBFAFA]">
-                  24th June, 2024
-                </h4>
-                <h4 className="text-[14px] font-medium leading-normal font-montserrat text-[#0A52F6]">
-                  By Okolo Enemona
-                </h4>
-              </div>
-              <BaseTypography
-                label="Restructuring UX flow the artisanal supply-chain of rural Nigeria."
-                fontSizeLarge="lg:text-[20px]"
-                className=" font-work-sans font-bold leading-normal w-[570px]"
-                color="text-[#FBFAFA]"
-              />
-              <BaseTypography
-                label="Our product design service is the cornerstone of innovation. "
-                fontSizeLarge="lg:text-[18px]"
-                className=" font-montserrat font-medium leading-[24px]"
-                color="text-[#FBFAFA]"
-              />
-            </div>
+            <BaseTypography
+              label="#freshoffthepress"
+              fontSizeLarge="text-[16px] lg:text-[18px]"
+              className="font-montserrat font-medium leading-[24px] text-[#FBFAFA]"
+            />
           </div>
-        </div>
-        <div className="absolute left-0 -bottom-16">
-          <BlogHeroIcons />
-        </div>
-        <div className="absolute left-0 -bottom-28">
-          <VectorBG />
+          <div className="h-[200px] lg:h-[314px] rounded-2xl w-full lg:w-[575px]">
+            <img
+              src="/assets/case-img.jpg"
+              alt="case-studies img"
+              className="rounded-2xl w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col gap-4 w-full lg:w-[575px]">
+            <div className="flex justify-between items-start">
+              <h4 className="text-[14px] font-medium leading-normal font-montserrat text-[#FBFAFA]">
+                24th June, 2024
+              </h4>
+              <h4 className="text-[14px] font-medium leading-normal font-montserrat text-[#0A52F6]">
+                By Okolo Enemona
+              </h4>
+            </div>
+            <BaseTypography
+              label="Restructuring UX flow the artisanal supply-chain of rural Nigeria."
+              fontSizeLarge="text-[18px] lg:text-[20px]"
+              className="font-work-sans font-bold leading-normal text-[#FBFAFA]"
+            />
+            <BaseTypography
+              label="Our product design service is the cornerstone of innovation."
+              fontSizeLarge="text-[16px] lg:text-[18px]"
+              className="font-montserrat font-medium leading-[24px] text-[#FBFAFA]"
+            />
+          </div>
         </div>
       </div>
+      <div className="flex justify-center lg:justify-start -mt-16 lg:-mt-28">
+        <BlogHeroIcons />
+      </div>
+      <div className="flex justify-center lg:justify-start -mb-28 lg:-mb-40">
+        <VectorBG />
+      </div>
     </div>
+  </div>
+  
   );
 };
 
