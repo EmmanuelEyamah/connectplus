@@ -4,12 +4,13 @@ import { BaseTypography } from "../components/ui/Typography";
 
 const Teams = () => {
   return (
-    <div className="w-full h-full py-20 px-24 bg-[#011F56]">
-      <div className="w-full h-full container mx-auto flex flex-col items-start gap-16">
+    <div className="w-full h-full py-10 px-12 lg:py-20 lg:px-24 bg-[#011F56]">
+      <div className="w-full h-full container mx-auto flex flex-col items-center lg:items-start gap-16">
         <BaseTypography
           label="Meet The Team"
           fontSizeLarge="lg:text-[48px]"
-          className=" font-work-sans font-bold leading-normal"
+          fontSizeSmall="text-[32px]"
+          className=" font-work-sans font-bold leading-normal text-center lg:text-left"
           color="text-[#fff]"
         />
 

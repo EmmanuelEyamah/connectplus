@@ -16,19 +16,18 @@ const Hero = () => {
     setIsPlaying(true);
   };
   return (
-    <section className="flex flex-col items-center pt-20 gap-16 bg-[#F3F3F3]  ">
+    <section className="flex flex-col items-center pl-3 lg:pl-0 pt-20 gap-16 bg-[#F3F3F3] overflow-hidden">
       <div className=" flex flex-col justify-center items-center gap-5 md:px-15 px-30 lg:gap-10 max-w-screen-xl ">
         <div className=" flex flex-col justify-center items-center gap-2 lg:gap-6 ">
           <BaseTypography
             label="ABOUT US"
-          
             className=" font-montserrat lg:text-[18px] text-[14px] fontM  font-semibold leading-relaxed tracking-normal"
             color="text-gray-700"
           />
           <div className="flex flex-col justify-center items-center gap-6">
             <BaseTypography
               label="Our Company"
-            className=" leading-[48px] lg:text-[48px] text-[35px] work font-bold"
+              className=" leading-[48px] lg:text-[48px] text-[35px] work font-bold"
               color="text-black"
             />
             <BaseTypography
@@ -37,7 +36,6 @@ const Hero = () => {
               By cultivating an environment that values both creative ideas and
               technical excellence, we ensure that our solutions not only meet
               but exceed our clients expectations."
-             
               className=" leading-[32px] lg:text-[20px] text-[16px] font-medium max-w-screen-lg text-center fontM font-montserrat"
               color="text-black-90"
             />
@@ -53,79 +51,75 @@ const Hero = () => {
       </div>
 
       <div className="h-[600px] w-full lg:w-[1248px] rounded-b-[20px] rounded-tr-[120px] relative lg:-bottom-[120px] -bottom-[60px] z-20">
-  {!isPlaying && (
-    <div
-      className="absolute inset-0 flex items-center justify-center cursor-pointer"
-      onClick={handlePlayClick}
-    >
-      <img
-        src="/assets/thumbnail.jpg"
-        alt="Thumbnail"
-        className="w-full h-full object-cover rounded-b-[20px] rounded-tr-[120px]"
-      />
-      <button className="absolute">
-        <svg
-          width="80"
-          height="80"
-          viewBox="0 0 120 120"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="60"
-            cy="60"
-            r="59"
-            stroke="#0A52F6"
-            strokeWidth="2"
+        {!isPlaying && (
+          <div
+            className="absolute inset-0 flex items-center justify-center cursor-pointer"
+            onClick={handlePlayClick}
+          >
+            <img
+              src="/assets/thumbnail.jpg"
+              alt="Thumbnail"
+              className="w-full h-full object-cover rounded-b-[20px] rounded-tr-[120px]"
+            />
+            <button className="absolute">
+              <svg
+                width="80"
+                height="80"
+                viewBox="0 0 120 120"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="60"
+                  cy="60"
+                  r="59"
+                  stroke="#0A52F6"
+                  strokeWidth="2"
+                />
+                <path d="M96 62L42 89.7128L42 34.2872L96 62Z" fill="#0A52F6" />
+              </svg>
+            </button>
+          </div>
+        )}
+        {isPlaying && (
+          <video
+            className="w-full h-full rounded-b-[20px] rounded-tr-[120px]"
+            src="/assets/team-video.mp4"
+            controls
+            autoPlay
           />
-          <path d="M96 62L42 89.7128L42 34.2872L96 62Z" fill="#0A52F6" />
-        </svg>
-      </button>
-    </div>
-  )}
-  {isPlaying && (
-    <video
-      className="w-full h-full rounded-b-[20px] rounded-tr-[120px]"
-      src="/assets/team-video.mp4"
-      controls
-      autoPlay
-    />
-  )}
-  <div className="absolute -top-8 -right-5">
-    <UnionIcon />
-  </div>
-</div>
-<div className="bg-[#011F56] container relative w-full h-[500px] lg:h-[400px] lg:pl-0 lg:pt-0 pb-0 flex flex-col lg:flex-row items-center justify-between">
-  <div className="relative flex flex-col lg:flex-col items-center lg:items-start justify-center gap-2  lg:w-2/3 w-full">
-    <div className="flex flex-row lg:flex-col justify-center items-center lg:items-start gap-5 w-full">
-      <div className="relative flex justify-center lg:justify-start">
-        <SmBookIcon />
+        )}
+        <div className="absolute -top-8 -right-5">
+          <UnionIcon />
+        </div>
       </div>
-      <div className="relative flex justify-center lg:justify-start lg:pl-8">
-        <BookIcon />
+      <div className="bg-[#011F56] container relative w-full h-[500px] lg:h-[400px] lg:pl-0 lg:pt-0 pb-0 flex lg:flex-row items-center justify-between">
+        <div className="relative w-[40%] lg:w-[400px] h-full">
+          <div className="absolute top-0 lg:top-32 left-0">
+            <SmBookIcon />
+          </div>
+          <div className="absolute bottom-0 left-0">
+            <PlantIcon />
+          </div>
+          <div className="absolute top-32 right-0">
+            <BookIcon />
+          </div>
+        </div>
+        <div className="w-[50%] lg:w-[800px] h-[75%] flex flex-col gap-5 items-end justify-end">
+          <BaseTypography
+            label="“Success is the result of hard work, unwavering dedication, and relentless effort.”"
+            fontSizeLarge=""
+            className="font-work-sans lg:text-[26px] text-[20px] font-semibold leading-normal lg:w-[519px] w-[300px]"
+            color="text-white"
+          />
+          <BaseTypography
+            label="-Dagogo"
+            fontSizeLarge="lg:text-[24px] text-[18px]"
+            className="font-work-sans font-semibold leading-normal lg:w-[519px] w-[300px]"
+            color="text-white"
+          />
+        </div>
       </div>
-      <div className="relative flex justify-center lg:justify-start">
-        <PlantIcon />
-      </div>
-    </div>
-  </div>
-  <div className="flex flex-col gap-5 lg:w-1/3 w-full items-center lg:items-start text-center lg:text-left px-5 lg:px-0">
-    <BaseTypography
-      label="“Success is the result of hard work, unwavering dedication, and relentless effort.”"
-      fontSizeLarge=""
-      className="font-work-sans lg:text-[26px] text-[20px] font-semibold leading-normal lg:w-[519px] w-full"
-      color="text-white"
-    />
-    <BaseTypography
-      label="-Dagogo"
-      fontSizeLarge="lg:text-[24px] text-[18px]"
-      className="font-work-sans font-semibold leading-normal lg:w-full w-full"
-      color="text-white"
-    />
-  </div>
-</div>
-
-
     </section>
   );
 };

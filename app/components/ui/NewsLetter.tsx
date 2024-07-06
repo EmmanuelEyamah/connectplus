@@ -9,7 +9,7 @@ const NewsLetter = () => {
   return (
     <div className="hidden lg:block w-full h-[200px] py-10 px-12 lg:py-20 lg:px-24 bg-[#CDCDCD]">
       <div className="w-full h-full container mx-auto relative">
-        <div className="bg-[#002B7D] flex-col lg:flex items-center gap-10 absolute top-[-150px] rounded-[40px] py-[20px] lg:py-[88px] px-10 lg:px-24 h-[360px] w-full lg:w-[1200px] z-50">
+        <div className="bg-[#002B7D] flex-col lg:flex lg:flex-row items-center gap-10 absolute top-[-150px] rounded-[40px] py-[20px] lg:py-[88px] px-10 lg:px-24 h-[360px] w-[500px] lg:w-[1200px]">
           <Typography
             {...commonProps}
             className="w-full lg:w-[677px] text-[32px] lg:text-[40px] text-white font-bold capitalize"

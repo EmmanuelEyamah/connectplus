@@ -60,3 +60,6 @@
   font-variant: small-caps;
 }
 
+.carousel {
+  width: 300px !important;
+}

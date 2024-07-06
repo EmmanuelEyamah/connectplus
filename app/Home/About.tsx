@@ -11,7 +11,7 @@ import { BaseTypography } from "../components/ui/Typography";
 const About = () => {
   return (
     <div className="bg-[#011F56] w-full h-full lg:h-[955px] pt-3 relative container mx-auto overflow-hidden">
-      <div className="mt-5 w-full h-full lg:h-[45px] bg-[#fff] border-2 border-[#002B7D]">
+      <div className="mt-5 w-full h-full lg:h-[40px] bg-[#fff] border-2 border-[#002B7D]">
         <AutoPlay />
       </div>
 
