@@ -46,7 +46,7 @@ const Hero = () => {
               />
               <div className="flex justify-center items-center">
                 <Typography
-                  className=" w-[448px] h-[116px] self-stretch bg-[rgba(32, 30, 30, 0.90)] font-Montserrat text-[18px] font-normal leading-[28px] "
+                  className=" w-[448px]  h-[116px] self-stretch bg-[rgba(32, 30, 30, 0.90)] font-Montserrat text-[18px] font-normal leading-[28.8px] "
                   {...commonProps}
                 >
                   Lorem ipsum dolor sit amet consectetur. In faucibus nisl etiam
