@@ -10,7 +10,7 @@ const VectorBG = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_589_21546)">
+        <g clipPath="url(#clip0_589_21546)">
           <path
             d="M1539.1 1.15491H-0.257812V0.313965H1539.1V1.15491Z"
             fill="white"
