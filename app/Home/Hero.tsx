@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { ArrowUpOutlined, CheckCircleFilled } from "@ant-design/icons";
@@ -47,8 +48,8 @@ const Hero = () => {
 
         {/* Hero Animation goes here */}
         <div className="w-full lg:w-[600px] relative flex items-center justify-center">
-          <Image
-            src="/hero_animation.gif"
+          <img
+            src="/assets/hero_animation.gif"
             alt="Home animation"
             width={520}
             height={400}
